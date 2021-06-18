@@ -21,6 +21,9 @@ tasks:
     init: gp sync-await deps
     command: just
 
+  - name: Test
+    init: /ide/node/bin/gitpod-node --inspect=9228 test.js
+
 ports:
   - port: 3000
     visibility: public
